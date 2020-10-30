@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.light {
+    --bg:#cce9f7;
+    --textNormal: #1b1218;
+    --textTitle: #1b1218;
+    --textLink: blue;
+    --hr: hsla(0, 0%, 0%, 0.2);
+  
+    background-color: var(--bg);
+  }
+  
+  body.dark {
+    -webkit-font-smoothing: antialiased;
+  
+    --bg: #153e4d;
+    --textNormal: #f5fcfe;
+    --textTitle: #f5fcfe;
+    --textLink: yellow;
+    --hr: hsla(0, 0%, 100%, 0.2);
+
+    background-color: var(--bg);
+  }
+
+  .layout {
+    background-color: var(--bg);
+    color: var(--textNormal);
+    transition: color 0.2s ease-out, background 0.2s ease-out
+  }
+
+
+  a {
+    color: var(--textNormal);;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+
+  .primary-heading {
+    padding-top: 10rem;
+    margin-left: 10vw;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .main {
+    min-height: 90vh;
+    margin: 40px 10vw;
+    text-align: justify;
+  }
+
+  .main>p {
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 1.125rem;
+  }

@@ -1,0 +1,173 @@
+/* Nav Section */
+.main-head {
+    background-color:#57b2bd;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position: relative;
+  }
+  
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 1.5rem 0rem;
+  }
+
+  .logo-link {
+    text-transform: capitalize;
+    line-height: 0;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+    display: inline-flex;
+    align-items:center;
+  }
+  #logo {
+    flex: 1 1 20rem;
+    margin-left: 3.5rem;
+  }
+
+  #logo-img {
+      position: absolute;
+      width:2.7rem;
+      height: auto;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 20rem;
+  }
+
+  .nav-links a {
+      font: bold 16px/1.4 'Roboto', sans-serif;
+      text-transform: capitalize;
+      margin: 0 2rem;
+      padding-bottom: 5px;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+      display: inline-block;
+      position: relative;
+  }
+
+  .nav-links a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #be4258;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .nav-links a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  
+
+
+/* toggle light/dark */
+body.dark .gg-moon{
+    display: none;
+  }
+  body.light .gg-sun{ 
+    display: none;
+  }
+
+  
+.checkbox {
+  display: none;
+}
+
+.mode-container {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  display: no;
+}
+
+/* .gg icons for sun and moon */
+.gg-sun {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 24px;
+  height: 24px;
+  background:
+    linear-gradient(to bottom,
+        currentColor 4px,transparent 0)
+        no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom,
+        currentColor 4px,transparent 0)
+        no-repeat 5px 14px/2px 6px,
+    linear-gradient(to bottom,
+        currentColor 4px,transparent 0)
+        no-repeat -8px 5px/6px 2px,
+    linear-gradient(to bottom,
+        currentColor 4px,transparent 0)
+        no-repeat 14px 5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent
+}
+.gg-sun::after,
+.gg-sun::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px
+}
+.gg-sun::before {
+  transform: rotate(-45deg)
+}
+.gg-sun::after {
+  transform: rotate(45deg)
+}
+.gg-moon,
+.gg-moon::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%
+}
+.gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom-color: transparent
+}
+.gg-moon::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px
+}
+
+.lbl-checkbox {
+  display: inline-block;
+  padding: 2px;
+}
+
