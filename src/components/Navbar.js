@@ -11,7 +11,7 @@ export default function Navbar() {
                 <Link to="/" className="logo-link">
                     <img id="logo-img" src={logo} alt="logo"></img>
                 </Link>
-                <Link to="/" className="logo-link"><h1 id="logo">penanda</h1></Link>
+                <Link to="/" className="logo-link"><h1 id="logo">pelaman</h1></Link>
                 <ul className="nav-links">
                     <Link to="/artikel">artikel</Link>
                     <Link to="/portofolio">portofolio</Link>
