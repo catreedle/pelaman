@@ -7,7 +7,7 @@ export default function Portofolio() {
             <Header headerText="portofolio" />
             <div className="main">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas cumque mollitia distinctio porro magnam itaque obcaecati fugit reiciendis? Enim!
+                    Things I've built... Hopefully this section won't stay empty for long
                 </p>
             </div>
             <Footer/>

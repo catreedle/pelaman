@@ -6,7 +6,7 @@ export default function Artikel() {
         <div className="layout">
             <Header headerText='artikel' />
             <div className="main">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt unde, dignissimos voluptates cumque numquam provident dolore distinctio aspernatur nam.</p>
+                <p>My God. I freaking hate CSS.</p>
             </div>
             <Footer/>
         </div>

@@ -10,11 +10,11 @@ export default function Footer() {
     return (
         <footer className="footer">
             <ul className="social-media">
-                <li><a href="https://www.github.com/catreedle"><img className="glow-button" src={github} alt="github" /></a></li>
-                <li><a href="https://www.linkedin.com/in/purnamasrahayu"><img className="glow-button" src={linkedin} alt="linkedin" /></a></li>
-                <li><a href="https://www.medium.com/purnamasidirahayu"><img className="glow-button" src={medium} alt="medium" /></a></li>
-                <li><a href="https://www.instagram.com/catwitchcraft"><img className="glow-button" src={instagram} alt="instagram" /></a></li>
-                <li><a href="https://www.twitter.com/catreedle"><img className="glow-button" src={twitter} alt="twitter" /></a></li>
+                <li><a href="https://www.github.com/catreedle" target="_blank" rel="noreferrer"><img className="glow-button" src={github} alt="github" /></a></li>
+                <li><a href="https://www.linkedin.com/in/purnamasrahayu" target="_blank" rel="noreferrer"><img className="glow-button" src={linkedin} alt="linkedin" /></a></li>
+                <li><a href="https://www.medium.com/@purnamasrahayu" target="_blank" rel="noreferrer"><img className="glow-button" src={medium} alt="medium" /></a></li>
+                <li><a href="https://www.instagram.com/catwitchcraft" target="_blank" rel="noreferrer"><img className="glow-button" src={instagram} alt="instagram" /></a></li>
+                <li><a href="https://www.twitter.com/catreedle" target="_blank" rel="noreferrer"><img className="glow-button" src={twitter} alt="twitter" /></a></li>
             </ul>
             <div className="footer-text">
                 &copy; 2020 Purnama S Rahayu &ndash;

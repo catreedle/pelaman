@@ -8,6 +8,8 @@ export default function Navbar() {
     return (
         <header className="main-head sticky">
             <nav>
+                <label for="hamburger" id="hamnav">&#9776;</label>
+                <input type="checkbox" id="hamburger" />
                 <Link to="/" className="logo-link">
                     <img id="logo-img" src={logo} alt="logo"></img>
                 </Link>
@@ -17,6 +19,7 @@ export default function Navbar() {
                     <Link to="/portofolio">portofolio</Link>
                     <Link to="/tentang">tentang</Link>
                 </ul>
+
                 <ThemeToggler>
                     {({ theme, toggleTheme }) => (
                         <label className="lbl-checkbox">

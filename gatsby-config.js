@@ -17,5 +17,11 @@ module.exports = {
             windows: false
         }
     }
-}]
+}],
+
+siteMetadata: {
+    title: "Pelaman",
+    siteUrl: `https://www.pelaman.com`,
+    description: "What is hocus pocus"
+}
 }
