@@ -185,20 +185,20 @@ body.dark .gg-moon{
     font-size: 180%;
   }
 
+
   .main-head {
     padding: 2vh 0;
   }
 
   .lbl-checkbox {
-    right: 10%;
+    right: 20%;
     position: fixed;
   }
-
   .nav-links a{
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
   }
 
   .nav-links {

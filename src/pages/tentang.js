@@ -7,13 +7,16 @@ export default function Tentang() {
             <Header headerText="tentang laman" />
             <div className="main">
                 <p>
-                    What are the odds of you stumbling across this page. What are the odds of me publishing it. If I were to write this thing another day, it would be a completely different thing. If you were to visit this site at a different time, I might have decided to change it. It doesn't really matter though. These are just words, and I am just another random person.
+                    Halooo.
                 </p>
                 <p>
-                    I'd like to think that I hold my own meaning, but I don't really believe so. Suddenly I realize I am just as lost as I was five years ago. Life's weird, and I don't know where I might end up next. There's this thing that I love to do, but I am horribly bad at it. I tried telling myself it's okay, that it doesn't define who I am, but it doesn't chase the bad feeling away, it's still nagging at the corner. What do you suggest I do?
+                    Selamat datang di halaman pribadiku. (that sounds weird... ew?) Creating this page has taught me one thing that is: How terribly, horribly bad I am at CSS, among other things, sure. But trying to solve CSS problem, I don't even know where to start.. it gives me instant headache, and makes me want to bang my head repeatedly into the nearest wall hahaha.
                 </p>
                 <p>
-                    What's this? This is my own personal page. What's the purpose of me having this? I hope it can be a place of self reflection, and it's my attempt to leave a mark in this world, despite how insignificant it is. I am insignificant. I can live with that. Haha. Not really. But I will die eventually and it won't really make a difference so.. might as well try?
+                    Salam kenal. Namaku Purnama Sidi Rahayu. Semasa kuliah aku berkenalan dengan koding yang ternyata menyenangkan (but also hurting my head big time), the college thing didn't work out unfortunately, but I decided to pursue this as a career still (sometimes I question the decision tho).
+                </p>
+                <p>
+                    I love cats, twenty one pilots, I read too many cheesy fictions it's unhealthy, aku suka membuat amigurumi, dan kadang-kadang belajar ukulele (tapi gak bisa-bisa). Stick around and then I'll tell you more! Maybe... 
                 </p>
             </div>
             <Footer/>
