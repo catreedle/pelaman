@@ -7,7 +7,7 @@ export default function Home() {
     <Header/>
     <div className="main">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas cumque mollitia distinctio porro magnam itaque obcaecati fugit reiciendis? Enim!
+        This is a starting point. Keep that in mind, in case you get lost.
       </p>
     </div>
     <Footer />

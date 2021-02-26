@@ -6,7 +6,7 @@ export default function Tentang() {
         <div className="layout">
             <Header />
             <div className="main">
-                <p>404 adalah ruang kosong</p>
+                <p>404 aww kamu tersesat</p>
             </div>
             <Footer />
         </div>
