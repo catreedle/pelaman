@@ -9,6 +9,7 @@ module.exports = {
                 },
             },
             'gatsby-plugin-dark-mode',
+            'gatsby-transformer-remark',
             {
                 resolve: 'gatsby-plugin-favicon',
                 options: {
@@ -31,5 +32,9 @@ module.exports = {
         title: "Pelaman",
         siteUrl: `https://www.pelaman.com`,
         description: "What is hocus pocus"
+    },
+
+    flags: {
+        THE_FLAG: false
     }
 }

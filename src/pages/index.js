@@ -2,35 +2,29 @@ import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { graphql } from "gatsby"
+import '../styles/index.css'
 
 export default function Home({ data }) {
-  console.log(data)
   return (
     <div className="layout">
       <Header />
       <div className="main">
         <div>
-          <h1>My Site's Files</h1>
-          <table>
-            <thead>
-              <tr>
-                <th>relativePath</th>
-                <th>prettySize</th>
-                <th>extension</th>
-                <th>birthTime</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.allFile.edges.map(({ node }, index) => (
-                <tr key={index}>
-                  <td>{node.relativePath}</td>
-                  <td>{node.prettySize}</td>
-                  <td>{node.extension}</td>
-                  <td>{node.birthTime}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <h1 className="index-header">
+            What I have so far...
+          </h1>
+          <h4 className="post-counter">{data.allMarkdownRemark.totalCount} Posts</h4>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div className="post" key={node.id}>
+              <h3 className="post-title">
+                {node.frontmatter.title}{" "}
+                <span>
+                  — {node.frontmatter.date}
+                </span>
+              </h3>
+              <p className="post-summary">{node.excerpt}</p>
+            </div>
+          ))}
         </div>
       </div>
       <Footer />
@@ -40,13 +34,16 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allFile {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
       edges {
         node {
-          relativePath
-          prettySize
-          extension
-          birthTime(fromNow: true)
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          excerpt
         }
       }
     }

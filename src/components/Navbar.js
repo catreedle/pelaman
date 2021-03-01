@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <header className="main-head sticky">
             <nav>
-                <label for="hamburger" id="hamnav">&#9776;</label>
+                <label htmlFor="hamburger" id="hamnav">&#9776;</label>
                 <input type="checkbox" id="hamburger" />
                 <Link to="/" className="logo-link">
                     <img id="logo-img" src={logo} alt="logo"></img>
