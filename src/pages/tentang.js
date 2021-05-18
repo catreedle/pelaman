@@ -7,17 +7,13 @@ export default function Tentang() {
             <Header headerText="tentang laman" />
             <div className="main">
                 <p>
-                    Halooo.
+                    Halo.
                 </p>
                 <p>
-                    Selamat datang di pelaman.com. Agak lupa-lupa ingat kenapa memutuskan bikin blog dengan domain aneh begini hahaha. Tapi sudah terlanjur kebeli domain-nya. <span role="img" aria-label="grinning face with sweat">😅</span> <br></br>
-                    It's a bit messy ehh? But I am very proud of this baby. <span role="img" aria-label="pleading face">🥺</span> Akhirnyaa jadi juga <i>project</i> yang lama ketunda ini.
+                    Pelaman.com adalah laman yang dibuat dan dikelola oleh Purnama Sidi Rahayu untuk menandakan keberadaannya di internet, sebagai upaya untuk menjawab, atau mungkin pula lari dari krisis eksistensial.
                 </p>
                 <p>
-                    Salam kenal. Namaku Purnama Sidi Rahayu. Semasa kuliah aku berkenalan dengan koding yang ternyata menyenangkan (but also hurting my head big time), the college thing didn't work out unfortunately, but I decided to pursue this as a career still (sometimes I question the decision tho).
-                </p>
-                <p>
-                    I love cats, twenty one pilots, reading too many cheesy romances to the point of unhealthy, aku suka membuat amigurumi, dan kadang-kadang belajar ukulele (tapi gak bisa-bisa). Stick around and then I'll tell you more! Maybe... 
+                    Karena eksistensinya sampai sekarang merupakan sesuatu yang acak dan absurd, mungkin isi laman ini juga akan seperti itu, absurd dan acak, kusut, tanpa tema dan tujuan yang menjadi benang merah, atau mungkin pula dari sini kita malah jadi bisa mengurai kekusutan itu.
                 </p>
             </div>
             <Footer/>

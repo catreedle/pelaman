@@ -1,7 +1,8 @@
 import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import { graphql } from "gatsby"
+
+import { Link, graphql } from "gatsby"
 import '../styles/index.css'
 
 export default function Home({ data }) {
@@ -11,17 +12,19 @@ export default function Home({ data }) {
       <div className="main">
         <div>
           <h1 className="index-header">
-            What I have so far...
+            Indeks
           </h1>
           <h4 className="post-counter">{data.allMarkdownRemark.totalCount} Posts</h4>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div className="post" key={node.id}>
-              <h3 className="post-title">
-                {node.frontmatter.title}{" "}
-                <span>
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
+              <Link to={node.fields.slug}>
+                <h3 className="post-title">
+                  {node.frontmatter.title}{" "}
+                  <span>
+                    — {node.frontmatter.date}
+                  </span>
+                </h3>
+              </Link>
               <p className="post-summary">{node.excerpt}</p>
             </div>
           ))}
@@ -42,6 +45,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
         }
