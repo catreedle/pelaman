@@ -1,11 +1,26 @@
-import React from "react";
+import React from "react"
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import { graphql } from "gatsby"
 
-const Post = () => (
-    <section>
-        <p>
-            Posta bosta
-        </p>
-    </section>
-)
+export default function BlogPost({ data }) {
+    const post = data.markdownRemark
+    return (
+        <div className="layout">
+            <Header headerText={post.frontmatter.title} />
+            <div className="main" dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Footer />
+        </div>
+    )
+}
 
-export default Post;
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`

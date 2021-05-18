@@ -15,7 +15,7 @@ export default function Navbar() {
                 </Link>
                 <Link to="/" className="logo-link"><h1 id="logo">pelaman</h1></Link>
                 <ul className="nav-links">
-                    <Link to="/artikel">artikel</Link>
+                    <Link to="/">indeks</Link>
                     <Link to="/portofolio">portofolio</Link>
                     <Link to="/tentang">tentang</Link>
                 </ul>
